@@ -11,6 +11,7 @@
 		469A577C1F1F1465001FA5AC /* FTDesignableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A577B1F1F1465001FA5AC /* FTDesignableTests.swift */; };
 		469A577E1F1F1465001FA5AC /* FTDesignable.h in Headers */ = {isa = PBXBuildFile; fileRef = 469A57701F1F1465001FA5AC /* FTDesignable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		469A57881F1F1AB0001FA5AC /* FTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A57871F1F1AB0001FA5AC /* FTButton.swift */; };
+		469A578A1F1F22DE001FA5AC /* FTDesignable.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 469A57891F1F22DE001FA5AC /* FTDesignable.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		469A577B1F1F1465001FA5AC /* FTDesignableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTDesignableTests.swift; sourceTree = "<group>"; };
 		469A577D1F1F1465001FA5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		469A57871F1F1AB0001FA5AC /* FTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTButton.swift; sourceTree = "<group>"; };
+		469A57891F1F22DE001FA5AC /* FTDesignable.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FTDesignable.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				469A576F1F1F1465001FA5AC /* FTDesignable */,
 				469A577A1F1F1465001FA5AC /* FTDesignableTests */,
 				469A576E1F1F1465001FA5AC /* Products */,
+				469A57891F1F22DE001FA5AC /* FTDesignable.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469A578A1F1F22DE001FA5AC /* FTDesignable.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
