@@ -102,9 +102,9 @@ public class FTButton: UIButton {
     // add gradient to button
     @IBInspectable public var enableGradientBackground : Bool = false
     
-    @IBInspectable var gradientColor1 : UIColor = UIColor.black
+    @IBInspectable public var gradientColor1 : UIColor = UIColor.black
     
-    @IBInspectable var gradientColor2 : UIColor = UIColor.white
+    @IBInspectable public var gradientColor2 : UIColor = UIColor.white
     
     
     
