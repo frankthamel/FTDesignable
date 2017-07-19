@@ -11,23 +11,6 @@ import UIKit
 @IBDesignable
 public class FTButton: UIButton {
     
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        if enableImageRightAligned , let imageView = imageView {
-            imageEdgeInsets.left = self.bounds.width - imageView.bounds.width - imageRightPadding
-        }
-        
-        if enableGradientBackground {
-            let gradientLayer = CAGradientLayer()
-            gradientLayer.frame = self.bounds
-            gradientLayer.colors = [gradientColor1.cgColor , gradientColor2.cgColor]
-            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-            self.layer.insertSublayer(gradientLayer, at: 0)
-        }
-    }
-    
     @IBInspectable public var cornerRadius : CGFloat = 10.0 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -106,6 +89,21 @@ public class FTButton: UIButton {
     
     @IBInspectable public var gradientColor2 : UIColor = UIColor.white
     
-    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        if enableImageRightAligned , let imageView = imageView {
+            imageEdgeInsets.left = self.bounds.width - imageView.bounds.width - imageRightPadding
+        }
+        
+        if enableGradientBackground {
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.frame = self.bounds
+            gradientLayer.colors = [gradientColor1.cgColor , gradientColor2.cgColor]
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+            self.layer.insertSublayer(gradientLayer, at: 0)
+        }
+    }
     
 }
