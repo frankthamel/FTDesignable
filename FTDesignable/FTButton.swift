@@ -20,7 +20,7 @@ public class FTButton: UIButton {
         
         if enableGradientBackground {
             let gradientLayer = CAGradientLayer()
-            gradientLayer.bounds = self.bounds
+            gradientLayer.frame = self.bounds
             gradientLayer.colors = [gradientColor1.cgColor , gradientColor2.cgColor]
             gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
             gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
