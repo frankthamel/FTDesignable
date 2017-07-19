@@ -10,6 +10,7 @@
 		469A57771F1F1465001FA5AC /* FTDesignable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469A576D1F1F1465001FA5AC /* FTDesignable.framework */; };
 		469A577C1F1F1465001FA5AC /* FTDesignableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A577B1F1F1465001FA5AC /* FTDesignableTests.swift */; };
 		469A577E1F1F1465001FA5AC /* FTDesignable.h in Headers */ = {isa = PBXBuildFile; fileRef = 469A57701F1F1465001FA5AC /* FTDesignable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469A57881F1F1AB0001FA5AC /* FTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A57871F1F1AB0001FA5AC /* FTButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		469A57761F1F1465001FA5AC /* FTDesignableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTDesignableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		469A577B1F1F1465001FA5AC /* FTDesignableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTDesignableTests.swift; sourceTree = "<group>"; };
 		469A577D1F1F1465001FA5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469A57871F1F1AB0001FA5AC /* FTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				469A57701F1F1465001FA5AC /* FTDesignable.h */,
 				469A57711F1F1465001FA5AC /* Info.plist */,
+				469A57871F1F1AB0001FA5AC /* FTButton.swift */,
 			);
 			path = FTDesignable;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					469A576C1F1F1465001FA5AC = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = MV76X88Q4Q;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					469A57751F1F1465001FA5AC = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469A57881F1F1AB0001FA5AC /* FTButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +329,7 @@
 		469A57821F1F1465001FA5AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MV76X88Q4Q;
@@ -336,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Talene.FTDesignable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +350,7 @@
 		469A57831F1F1465001FA5AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MV76X88Q4Q;
@@ -362,6 +370,7 @@
 		469A57851F1F1465001FA5AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MV76X88Q4Q;
 				INFOPLIST_FILE = FTDesignableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +383,7 @@
 		469A57861F1F1465001FA5AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MV76X88Q4Q;
 				INFOPLIST_FILE = FTDesignableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +412,7 @@
 				469A57831F1F1465001FA5AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		469A57841F1F1465001FA5AC /* Build configuration list for PBXNativeTarget "FTDesignableTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +421,7 @@
 				469A57861F1F1465001FA5AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
